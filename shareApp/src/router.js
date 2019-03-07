@@ -1,15 +1,15 @@
 /* global Vue */
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+// 组件懒加载
+const Pages = (resolve) => require(['@/pages/pages'], resolve);
 
-Vue.use(Router)
+Vue.use(Router);
 
 export const router = new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+     path: '/',
+     component: Pages,
     }
   ]
 })

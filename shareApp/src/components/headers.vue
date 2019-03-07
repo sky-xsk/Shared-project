@@ -1,17 +1,14 @@
 <template>
-  <text class="message">Now, let's use Vue.js to build your Weex app.</text>
+    <div class='headers'>头部信息</div>
 </template>
-
 <script>
 export default {
-  name: 'App',
+  name: 'headers',
   data () {
     return {
-      
     }
   },
   methods: {
-    
-  },
+  }
 }
 </script>
