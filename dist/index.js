@@ -157,7 +157,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 /*global Vue*/
 Vue.use(_vueRouter2.default);
-// import HelloWorld from '@/components/HelloWorld'
+
 var router = exports.router = new _vueRouter2.default({
   mode: 'abstract',
   routes: [{
@@ -2969,7 +2969,7 @@ module.exports = __vue_exports__
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('text', {
     staticClass: ["message"]
-  }, [_vm._v("Now, let's use Vue.js to build your Weex app.")])
+  }, [_vm._v("开始使用vue+weex")])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
@@ -3055,6 +3055,12 @@ exports.default = {
   name: 'App',
   data: function data() {
     return {};
+  },
+
+  methods: {
+    back: function back() {
+      this.$router.back();
+    }
   }
 };
 
@@ -3064,7 +3070,9 @@ exports.default = {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: ["wrapper"]
+    on: {
+      "androidback": _vm.back
+    }
   }, [_c('router-view')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div @androidback="back">
     <router-view/>
   </div>
 </template>
@@ -9,6 +9,11 @@ export default {
   name: 'App',
   data () {
     return {
+    }
+  },
+  methods: {
+    back() {
+      this.$router.back();
     }
   }
 }
