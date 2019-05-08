@@ -1,18 +1,20 @@
 <template>
   <div>
-    <text>测试内容</text>
+    <text>首页</text>
   </div>
 </template>
 <script>
 
-
 export default {
-  name: 'App',
+  name: 'home',
   data () {
     return {
 
     }
-  }
+  },
+  methods: {
+
+  },
 }
 </script>
 

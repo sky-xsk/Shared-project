@@ -22,7 +22,13 @@
     methods: {
       wxcTabBarCurrentTabSelected (e) {
         const index = e.page;
-        // console.log(index);
+        if(index === 0) {
+          this.$router.push('home');
+        } else if(index === 1) {
+          this.$router.push('order');
+        } else if(index === 2) {
+          this.$router.push('mine');
+        }
       }
     }
   };

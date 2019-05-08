@@ -4,7 +4,7 @@
         <HeaderTop></HeaderTop>
     </div>
     <div class='contents'>
-       <router-view/>
+       <router-view></router-view>
     </div>
     <div class='footerBottom'>
       <FooterBottom></FooterBottom>
