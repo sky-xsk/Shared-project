@@ -9,7 +9,6 @@
     <div class='footerBottom'>
       <FooterBottom></FooterBottom>
     </div>
-
   </div>
 </template>
 
@@ -44,7 +43,7 @@ export default {
     position: absolute;
     top: 90px;
     bottom: 120px;
-    width: 100%;
+    width: 750px;
     background-color: #fbf8f8;
   }
   .footerBottom{
@@ -52,7 +51,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    height:120px;
+    width: 750px;
+    height: 120px;
   }
 </style>

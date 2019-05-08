@@ -18,7 +18,6 @@
       tabStyles: Config.tabStyles
     }),
     created () {
-      const tabPageHeight = '120px';
     },
     methods: {
       wxcTabBarCurrentTabSelected (e) {
@@ -34,5 +33,8 @@
     background-color: #f2f3f4;
     align-items: center;
     justify-content: center;
+  }
+  .footerBottom{
+    height: 120px;
   }
 </style>

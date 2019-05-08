@@ -89,7 +89,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _require = __webpack_require__(3),
     router = _require.router;
 
-var App = __webpack_require__(11);
+var App = __webpack_require__(9);
 
 // 注册全局过滤器
 Object.keys(filters).forEach(function (key) {
@@ -2861,7 +2861,7 @@ __vue_styles__.push(__webpack_require__(6)
 __vue_exports__ = __webpack_require__(7)
 
 /* template */
-var __vue_template__ = __webpack_require__(10)
+var __vue_template__ = __webpack_require__(8)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2921,9 +2921,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 8 */,
-/* 9 */,
-/* 10 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -2934,21 +2932,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(12)
+__vue_styles__.push(__webpack_require__(10)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(13)
+__vue_exports__ = __webpack_require__(11)
 
 /* template */
-var __vue_template__ = __webpack_require__(14)
+var __vue_template__ = __webpack_require__(35)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -2978,7 +2976,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -2994,7 +2992,7 @@ module.exports = {
     "position": "absolute",
     "top": "90",
     "bottom": "120",
-    "width": 100,
+    "width": "750",
     "backgroundColor": "#fbf8f8"
   },
   "footerBottom": {
@@ -3002,13 +3000,13 @@ module.exports = {
     "bottom": 0,
     "left": 0,
     "right": 0,
-    "width": 100,
+    "width": "750",
     "height": "120"
   }
 }
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3018,17 +3016,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _FooterBottom = __webpack_require__(24);
+var _FooterBottom = __webpack_require__(12);
 
 var _FooterBottom2 = _interopRequireDefault(_FooterBottom);
 
-var _HeaderTop = __webpack_require__(15);
+var _HeaderTop = __webpack_require__(26);
 
 var _HeaderTop2 = _interopRequireDefault(_HeaderTop);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//
 //
 //
 //
@@ -3059,479 +3056,21 @@ exports.default = {
 };
 
 /***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    on: {
-      "androidback": _vm.back
-    }
-  }, [_c('div', {
-    staticClass: ["headerTop"]
-  }, [_c('HeaderTop')], 1), _c('div', {
-    staticClass: ["contents"]
-  }, [_c('router-view')], 1), _c('div', {
-    staticClass: ["footerBottom"]
-  }, [_c('FooterBottom')], 1)])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 15 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(23)
+__vue_styles__.push(__webpack_require__(13)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(17)
+__vue_exports__ = __webpack_require__(14)
 
 /* template */
-var __vue_template__ = __webpack_require__(16)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/xueshikai/Desktop/Shared-project/src/components/HeaderTop.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-7a713388"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["container"],
-    style: {
-      height: '44px'
-    }
-  }, [_c('div', {
-    staticClass: ["demo"]
-  }, [_c('wxc-minibar', {
-    attrs: {
-      "title": "标题",
-      "backgroundColor": "#f7c242",
-      "textColor": "#ffffff",
-      "rightText": "更多"
-    },
-    on: {
-      "wxcMinibarLeftButtonClicked": _vm.minibarLeftButtonClick,
-      "wxcMinibarRightButtonClicked": _vm.minibarRightButtonClick
-    }
-  })], 1)])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _wxcMinibar = __webpack_require__(18);
-
-var _wxcMinibar2 = _interopRequireDefault(_wxcMinibar);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var modal = weex.requireModule('modal'); //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-exports.default = {
-  components: {
-    WxcMinibar: _wxcMinibar2.default
-  },
-  methods: {
-    minibarLeftButtonClick: function minibarLeftButtonClick() {},
-    minibarRightButtonClick: function minibarRightButtonClick() {
-      modal.toast({ 'message': '点击了更多按钮', 'duration': 1 });
-    }
-  }
-};
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _index = __webpack_require__(19);
-
-Object.defineProperty(exports, 'default', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_index).default;
-  }
-});
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(20)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(21)
-
-/* template */
-var __vue_template__ = __webpack_require__(22)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/xueshikai/Desktop/Shared-project/node_modules/weex-ui/packages/wxc-minibar/index.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-112985b0"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports) {
-
-module.exports = {
-  "wxc-minibar": {
-    "width": "750",
-    "height": "90",
-    "flexDirection": "row",
-    "justifyContent": "space-between",
-    "alignItems": "center",
-    "backgroundColor": "#009ff0"
-  },
-  "left": {
-    "width": "180",
-    "paddingLeft": "32"
-  },
-  "middle-title": {
-    "fontSize": "30",
-    "color": "#ffffff",
-    "height": "36",
-    "lineHeight": "34"
-  },
-  "right": {
-    "width": "180",
-    "paddingRight": "32",
-    "alignItems": "flex-end"
-  },
-  "left-button": {
-    "width": "21",
-    "height": "36"
-  },
-  "right-button": {
-    "width": "32",
-    "height": "32"
-  },
-  "icon-text": {
-    "fontSize": "28",
-    "color": "#ffffff"
-  }
-}
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var Navigator = weex.requireModule('navigator');
-exports.default = {
-  props: {
-    backgroundColor: {
-      type: String,
-      default: '#FFC900'
-    },
-    leftButton: {
-      type: String,
-      default: 'https://gw.alicdn.com/tfs/TB1x18VpwMPMeJjy1XdXXasrXXa-21-36.png'
-    },
-    textColor: {
-      type: String,
-      default: '#3D3D3D'
-    },
-    rightButton: {
-      type: String,
-      default: ''
-    },
-    title: {
-      type: String,
-      default: '标题'
-    },
-    leftText: {
-      type: String,
-      default: ''
-    },
-    rightText: {
-      type: String,
-      default: ''
-    },
-    useDefaultReturn: {
-      type: Boolean,
-      default: true
-    },
-    show: {
-      type: Boolean,
-      default: true
-    },
-    barStyle: {
-      type: Object
-    }
-  },
-  computed: {
-    newBarStyle: function newBarStyle() {
-      var backgroundColor = this.backgroundColor,
-          barStyle = this.barStyle;
-
-      return _extends({
-        backgroundColor: backgroundColor
-      }, barStyle);
-    }
-  },
-  methods: {
-    leftButtonClicked: function leftButtonClicked() {
-      if (this.useDefaultReturn) {
-        Navigator.pop({}, function (e) {});
-      }
-      this.$emit('wxcMinibarLeftButtonClicked', {});
-    },
-    rightButtonClicked: function rightButtonClicked() {
-      var hasRightContent = this.rightText || this.rightButton || this.$slots && this.$slots.right;
-      hasRightContent && this.$emit('wxcMinibarRightButtonClicked', {});
-    }
-  }
-};
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return (_vm.show) ? _c('div', {
-    staticClass: ["wxc-minibar"],
-    style: _vm.newBarStyle
-  }, [_c('div', {
-    staticClass: ["left"],
-    attrs: {
-      "ariaLabel": "返回",
-      "accessible": true
-    },
-    on: {
-      "click": _vm.leftButtonClicked
-    }
-  }, [_vm._t("left", [(_vm.leftButton && !_vm.leftText) ? _c('image', {
-    staticClass: ["left-button"],
-    attrs: {
-      "src": _vm.leftButton
-    }
-  }) : _vm._e(), (_vm.leftText) ? _c('text', {
-    staticClass: ["icon-text"],
-    style: {
-      color: _vm.textColor
-    }
-  }, [_vm._v(_vm._s(_vm.leftText))]) : _vm._e()])], 2), _vm._t("middle", [_c('text', {
-    staticClass: ["middle-title"],
-    style: {
-      color: _vm.textColor
-    }
-  }, [_vm._v(_vm._s(_vm.title))])]), _c('div', {
-    staticClass: ["right"],
-    on: {
-      "click": _vm.rightButtonClicked
-    }
-  }, [_vm._t("right", [(_vm.rightButton && !_vm.rightText) ? _c('image', {
-    staticClass: ["right-button"],
-    attrs: {
-      "src": _vm.rightButton,
-      "ariaHidden": true
-    }
-  }) : _vm._e(), (_vm.rightText) ? _c('text', {
-    staticClass: ["icon-text"],
-    style: {
-      color: _vm.textColor
-    }
-  }, [_vm._v(_vm._s(_vm.rightText))]) : _vm._e()])], 2)], 2) : _vm._e()
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports) {
-
-module.exports = {}
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(25)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(26)
-
-/* template */
-var __vue_template__ = __webpack_require__(37)
+var __vue_template__ = __webpack_require__(25)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -3561,7 +3100,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 25 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -3570,11 +3109,14 @@ module.exports = {
     "backgroundColor": "#f2f3f4",
     "alignItems": "center",
     "justifyContent": "center"
+  },
+  "footerBottom": {
+    "height": "120"
   }
 }
 
 /***/ }),
-/* 26 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3584,11 +3126,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _wxcTabBar = __webpack_require__(27);
+var _wxcTabBar = __webpack_require__(15);
 
 var _wxcTabBar2 = _interopRequireDefault(_wxcTabBar);
 
-var _config = __webpack_require__(36);
+var _config = __webpack_require__(24);
 
 var _config2 = _interopRequireDefault(_config);
 
@@ -3613,9 +3155,7 @@ exports.default = {
       tabStyles: _config2.default.tabStyles
     };
   },
-  created: function created() {
-    var tabPageHeight = '120px';
-  },
+  created: function created() {},
 
   methods: {
     wxcTabBarCurrentTabSelected: function wxcTabBarCurrentTabSelected(e) {
@@ -3626,7 +3166,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 27 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3636,7 +3176,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _index = __webpack_require__(28);
+var _index = __webpack_require__(16);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -3648,21 +3188,21 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 28 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(29)
+__vue_styles__.push(__webpack_require__(17)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(30)
+__vue_exports__ = __webpack_require__(18)
 
 /* template */
-var __vue_template__ = __webpack_require__(35)
+var __vue_template__ = __webpack_require__(23)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -3692,7 +3232,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 29 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -3760,7 +3300,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 30 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3770,7 +3310,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _utils = __webpack_require__(31);
+var _utils = __webpack_require__(19);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -4042,7 +3582,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 31 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4057,7 +3597,7 @@ var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbo
                                                                                                                                                                                                                                                                                 * Created by Tw93 on 17/11/01
                                                                                                                                                                                                                                                                                 */
 
-var _urlParse = __webpack_require__(32);
+var _urlParse = __webpack_require__(20);
 
 var _urlParse2 = _interopRequireDefault(_urlParse);
 
@@ -4396,14 +3936,14 @@ var Utils = {
 exports.default = Utils;
 
 /***/ }),
-/* 32 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var required = __webpack_require__(33)
-  , qs = __webpack_require__(34)
+var required = __webpack_require__(21)
+  , qs = __webpack_require__(22)
   , slashes = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//
   , protocolre = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\S\s]*)/i
   , whitespace = '[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]'
@@ -4853,7 +4393,7 @@ module.exports = Url;
 
 
 /***/ }),
-/* 33 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4898,7 +4438,7 @@ module.exports = function required(port, protocol) {
 
 
 /***/ }),
-/* 34 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5023,7 +4563,7 @@ exports.parse = querystring;
 
 
 /***/ }),
-/* 35 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5101,7 +4641,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 36 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5111,8 +4651,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-
-  // 正常模式的tab title配置
   tabTitles: [{
     title: '首页',
     icon: 'https://gw.alicdn.com/tfs/TB1MWXdSpXXXXcmXXXXXXXXXXXX-72-72.png',
@@ -5141,49 +4679,10 @@ exports.default = {
     textPaddingLeft: 10,
     textPaddingRight: 10
   }
-
-  // 使用 iconFont 模式的tab title配置
-  // tabIconFontTitles: [
-  //   {
-  //     title: '首页',
-  //     codePoint: '\ue623'
-  //   },
-  //   {
-  //     title: '特别推荐',
-  //     codePoint: '\ue608'
-  //   },
-  //   {
-  //     title: '消息中心',
-  //     codePoint: '\ue752',
-  //     badge: 5
-  //   },
-  //   {
-  //     title: '我的主页',
-  //     codePoint: '\ue601',
-  //     dot: true
-  //   }
-  // ],
-  // tabIconFontStyles: {
-  //   bgColor: '#FFFFFF',
-  //   titleColor: '#666666',
-  //   activeTitleColor: '#3D3D3D',
-  //   activeBgColor: '#FFFFFF',
-  //   isActiveTitleBold: true,
-  //   width: 160,
-  //   height: 120,
-  //   fontSize: 24,
-  //   textPaddingLeft: 10,
-  //   textPaddingRight: 10,
-  //   iconFontSize: 50,
-  //   iconFontMarginBottom: 8,
-  //   iconFontColor: '#333333',
-  //   activeIconFontColor: 'red',
-  //   iconFontUrl: '//at.alicdn.com/t/font_501019_mauqv15evc1pp66r.ttf'
-  // }
 };
 
 /***/ }),
-/* 37 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -5199,6 +4698,464 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "wxcTabBarCurrentTabSelected": _vm.wxcTabBarCurrentTabSelected
     }
   })], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(27)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(28)
+
+/* template */
+var __vue_template__ = __webpack_require__(34)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/xueshikai/Desktop/Shared-project/src/components/HeaderTop.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-7a713388"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports) {
+
+module.exports = {}
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _wxcMinibar = __webpack_require__(29);
+
+var _wxcMinibar2 = _interopRequireDefault(_wxcMinibar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var modal = weex.requireModule('modal'); //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+  components: {
+    WxcMinibar: _wxcMinibar2.default
+  },
+  methods: {
+    minibarLeftButtonClick: function minibarLeftButtonClick() {},
+    minibarRightButtonClick: function minibarRightButtonClick() {
+      modal.toast({ 'message': '点击了更多按钮', 'duration': 1 });
+    }
+  }
+};
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _index = __webpack_require__(30);
+
+Object.defineProperty(exports, 'default', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_index).default;
+  }
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(31)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(32)
+
+/* template */
+var __vue_template__ = __webpack_require__(33)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/xueshikai/Desktop/Shared-project/node_modules/weex-ui/packages/wxc-minibar/index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-112985b0"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "wxc-minibar": {
+    "width": "750",
+    "height": "90",
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "alignItems": "center",
+    "backgroundColor": "#009ff0"
+  },
+  "left": {
+    "width": "180",
+    "paddingLeft": "32"
+  },
+  "middle-title": {
+    "fontSize": "30",
+    "color": "#ffffff",
+    "height": "36",
+    "lineHeight": "34"
+  },
+  "right": {
+    "width": "180",
+    "paddingRight": "32",
+    "alignItems": "flex-end"
+  },
+  "left-button": {
+    "width": "21",
+    "height": "36"
+  },
+  "right-button": {
+    "width": "32",
+    "height": "32"
+  },
+  "icon-text": {
+    "fontSize": "28",
+    "color": "#ffffff"
+  }
+}
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var Navigator = weex.requireModule('navigator');
+exports.default = {
+  props: {
+    backgroundColor: {
+      type: String,
+      default: '#FFC900'
+    },
+    leftButton: {
+      type: String,
+      default: 'https://gw.alicdn.com/tfs/TB1x18VpwMPMeJjy1XdXXasrXXa-21-36.png'
+    },
+    textColor: {
+      type: String,
+      default: '#3D3D3D'
+    },
+    rightButton: {
+      type: String,
+      default: ''
+    },
+    title: {
+      type: String,
+      default: '标题'
+    },
+    leftText: {
+      type: String,
+      default: ''
+    },
+    rightText: {
+      type: String,
+      default: ''
+    },
+    useDefaultReturn: {
+      type: Boolean,
+      default: true
+    },
+    show: {
+      type: Boolean,
+      default: true
+    },
+    barStyle: {
+      type: Object
+    }
+  },
+  computed: {
+    newBarStyle: function newBarStyle() {
+      var backgroundColor = this.backgroundColor,
+          barStyle = this.barStyle;
+
+      return _extends({
+        backgroundColor: backgroundColor
+      }, barStyle);
+    }
+  },
+  methods: {
+    leftButtonClicked: function leftButtonClicked() {
+      if (this.useDefaultReturn) {
+        Navigator.pop({}, function (e) {});
+      }
+      this.$emit('wxcMinibarLeftButtonClicked', {});
+    },
+    rightButtonClicked: function rightButtonClicked() {
+      var hasRightContent = this.rightText || this.rightButton || this.$slots && this.$slots.right;
+      hasRightContent && this.$emit('wxcMinibarRightButtonClicked', {});
+    }
+  }
+};
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return (_vm.show) ? _c('div', {
+    staticClass: ["wxc-minibar"],
+    style: _vm.newBarStyle
+  }, [_c('div', {
+    staticClass: ["left"],
+    attrs: {
+      "ariaLabel": "返回",
+      "accessible": true
+    },
+    on: {
+      "click": _vm.leftButtonClicked
+    }
+  }, [_vm._t("left", [(_vm.leftButton && !_vm.leftText) ? _c('image', {
+    staticClass: ["left-button"],
+    attrs: {
+      "src": _vm.leftButton
+    }
+  }) : _vm._e(), (_vm.leftText) ? _c('text', {
+    staticClass: ["icon-text"],
+    style: {
+      color: _vm.textColor
+    }
+  }, [_vm._v(_vm._s(_vm.leftText))]) : _vm._e()])], 2), _vm._t("middle", [_c('text', {
+    staticClass: ["middle-title"],
+    style: {
+      color: _vm.textColor
+    }
+  }, [_vm._v(_vm._s(_vm.title))])]), _c('div', {
+    staticClass: ["right"],
+    on: {
+      "click": _vm.rightButtonClicked
+    }
+  }, [_vm._t("right", [(_vm.rightButton && !_vm.rightText) ? _c('image', {
+    staticClass: ["right-button"],
+    attrs: {
+      "src": _vm.rightButton,
+      "ariaHidden": true
+    }
+  }) : _vm._e(), (_vm.rightText) ? _c('text', {
+    staticClass: ["icon-text"],
+    style: {
+      color: _vm.textColor
+    }
+  }, [_vm._v(_vm._s(_vm.rightText))]) : _vm._e()])], 2)], 2) : _vm._e()
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["container"],
+    style: {
+      height: '44px'
+    }
+  }, [_c('div', {
+    staticClass: ["demo"]
+  }, [_c('wxc-minibar', {
+    attrs: {
+      "title": "标题",
+      "backgroundColor": "#f7c242",
+      "textColor": "#ffffff",
+      "rightText": "更多"
+    },
+    on: {
+      "wxcMinibarLeftButtonClicked": _vm.minibarLeftButtonClick,
+      "wxcMinibarRightButtonClicked": _vm.minibarRightButtonClick
+    }
+  })], 1)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    on: {
+      "androidback": _vm.back
+    }
+  }, [_c('div', {
+    staticClass: ["headerTop"]
+  }, [_c('HeaderTop')], 1), _c('div', {
+    staticClass: ["contents"]
+  }, [_c('router-view')], 1), _c('div', {
+    staticClass: ["footerBottom"]
+  }, [_c('FooterBottom')], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
