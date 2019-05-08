@@ -1,14 +1,13 @@
 <template>
   <div>
-    <text class="message">pages</text>
-    <HelloWorld></HelloWorld>
+    <text>测试内容</text>
   </div>
 </template>
 <script>
-import HelloWorld from '../components/HelloWorld';
+
+
 export default {
   name: 'App',
-  components: { HelloWorld },
   data () {
     return {
 
