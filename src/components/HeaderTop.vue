@@ -2,7 +2,7 @@
   <div class="container" :style="{ height: '44px' }">
     <div class="demo">
       <wxc-minibar 
-          title="标题"
+          title="首页"
           background-color="#f7c242"
           text-color="#ffffff"
           right-text="更多"
